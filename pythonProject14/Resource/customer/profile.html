@@ -1,0 +1,20 @@
+{% extends 'customer/base.html' %}
+
+{% block title %}
+Profile
+{% endblock %}
+
+{% load static %}
+
+{% block content %}
+
+<img src="{{ customer.profile.profile_picture.url }}" alt="{{ customer.profile.profile_picture.url }}">
+
+
+    <img style="height:30px; width:30px;" class="rounded-circle" src="{% static 'customer/items/images.jpg' %}"ALIGN="left" />
+&#8202 &#8202{{ name }}
+
+<br>
+
+<!--My email is {{ email }}-->
+{% endblock %}

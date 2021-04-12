@@ -1,0 +1,52 @@
+{% extends 'customer/base.html' %}
+
+{% block title %}
+Products
+{% endblock %}
+
+{% load static %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+
+   <div class="submit"><img style="height:172px; width:294px;" src="{% static 'customer/items/shirt.jpg' %}"ALIGN="left" />
+
+<br>
+
+   <form method="POST" action="{% url 'productList' %}">
+       {% csrf_token %}
+
+                  <button class="form-group btn btn-outline-info" type="submit">
+                      Buy Now
+
+                 </button>
+   </form>
+   </div>
+      <!--<input type="submit" value="Submit">
+   </form>
+   </div>--><br><br><br><br><br><br>
+
+<div><img style="height:172px; width:294px;" src="{% static 'customer/items/cardigan.jpg' %}"ALIGN="left" />
+
+</div><br><br><br><br><br><br><br><br><br>
+<div><img style="height:172px; width:294px;" src="{% static 'customer/items/tshirt.jpg' %}"ALIGN="left" /></div><br><br><br><br><br><br><br><br><br><br>
+<div><img style="height:172px; width:294px;" src="{% static 'customer/items/hoody.jpg' %}"ALIGN="left" /></div><br><br><br><br><br><br><br><br><br><br>
+<div><img style="height:172px; width:294px;" src="{% static 'customer/items/kidsclothes.jpg' %}"ALIGN="left" /></div><br><br><br><br><br><br><br><br><br><br>
+<div><img style="height:172px; width:294px;" src="{% static 'customer/items/heater.jpg' %}"ALIGN="left" /></div><br><br><br><br><br><br><br><br><br><br>
+<div><img style="height:172px; width:294px;" src="{% static 'customer/items/timer.jpg' %}"ALIGN="left" /></div><br><br><br><br><br><br><br><br><br><br><br>
+<div><img style="height:172px; width:294px;" src="{% static 'customer/items/pressostat.jpg' %}"ALIGN="left" /></div><br><br><br><br><br><br><br><br><br><br><br>
+<div><img style="height:172px; width:294px;" src="{% static 'customer/items/splashmotor.jpg' %}"ALIGN="left" /></div><br><br><br><br><br><br><br><br><br><br><br>
+<div><img style="height:172px; width:294px;" src="{% static 'customer/items/washtimer.jpg' %}"ALIGN="left" /></div><br><br><br><br><br><br><br><br><br><br><br>
+<div><img style="height:172px; width:294px;" src="{% static 'customer/items/corn.jpg' %}"ALIGN="left" /></div><br><br><br><br><br><br><br><br><br><br><br>
+<div><img style="height:172px; width:294px;" src="{% static 'customer/items/gasoline.jpg' %}"ALIGN="left" /></div><br><br><br><br><br><br><br><br><br><br><br>
+<div><img style="height:172px; width:294px;" src="{% static 'customer/items/steel.jpg' %}"ALIGN="left" /></div><br><br><br><br><br><br><br><br><br><br><br>
+<div><img style="height:172px; width:294px;" src="{% static 'customer/items/grain.jpg' %}"ALIGN="left" /></div><br><br><br><br><br><br><br><br><br><br><br>
+<div><img style="height:172px; width:294px;" src="{% static 'customer/items/plasticbottle.jpg' %}"ALIGN="left" /></div><br>
+
+{% endblock %}
+
+
+
+
+
+
