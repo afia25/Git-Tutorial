@@ -1,0 +1,56 @@
+{% extends 'customer/base.html' %}
+
+{% block title %}
+user order
+{% endblock %}
+
+{% block content %}
+{% load static %}
+
+<h3 align="center">Your Orders</h3>
+<br>
+
+<table>
+<thead>
+<tr>
+
+
+<th>Product ID</th>
+    <th>User ID</th>
+
+
+
+    </tr>
+</thead>
+<tbody>
+   {% for c in orders %}
+<tr>
+
+
+    <td>{{ c.purchase }}</td>
+       <td>{{ c.sale }}</td>
+
+
+
+</tr>
+   {% endfor %}
+
+</tbody>
+</table>
+
+<br><br>
+
+<form method="POST">
+       {% csrf_token %}
+
+                  <button class="form-group btn btn-outline-info" type="submit">
+                      Buy Now
+
+                 </button>
+   </form>
+
+
+
+
+
+{% endblock %}
